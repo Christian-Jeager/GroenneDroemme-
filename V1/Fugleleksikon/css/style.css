@@ -1,0 +1,195 @@
+
+/* General colours, fonts margins/padding, and other styling. */
+
+:root, body
+{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+    background-color: hsl(0, 0%, 86%);
+}
+
+main
+{
+    margin: 1rem;
+}
+
+li
+{
+    margin-bottom: 0.5rem;
+    padding-left: 0px;
+}
+
+h1, h2 {
+    font-family: 'Lato', sans-serif;
+}
+
+h1
+{
+    font-size: 2.3rem;
+    color: hsl(27, 67%, 30%); 
+}
+
+h2, h3, p
+{
+    color: hsl(180, 25%, 25%);
+}
+img
+{
+    border-radius: 0.5rem;
+}
+
+/* Related to the navigation bar */
+
+nav, footer
+{
+    background-color: hsl(27, 67%, 30%);
+    height: 50px;
+    width: 100%;
+}
+
+.navsect 
+{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navsect img
+{
+    height: 100%;
+    margin-right: 0.5rem;
+}
+
+/* Related to links */
+
+nav>a 
+{
+    display: none;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    color: hsl(0, 0%, 86%);
+    text-decoration: none;
+}
+
+a:hover
+{
+    opacity: 0.70;
+}
+
+/* Classes and related */
+
+.infosect
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.infosect img
+{
+    max-width: 100%;
+}
+
+.infosect picture
+{
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+}
+
+.infobox
+{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: hsla(0, 0%, 100%, 0.8) ;
+    margin: 1.5rem;
+}
+.infobox img
+{
+    height: auto;
+}
+
+.dtb 
+{
+    display: none;
+    width: 100%;
+}
+
+.imgsect
+{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.imgsect h2  {
+    display: flex;
+    align-items: flex-start;
+}
+
+
+/* Changes made when the screen is larger than 501 pixels */
+
+@media only screen and (min-width: 501px) {
+    
+    /* Nav related changes  */
+
+    .navsect
+    {
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav>a
+    {
+        display: block;
+    }
+
+    .navsect img
+    {
+        display: none;
+    }
+    /* General tag changes */
+    main
+    {
+        max-width: 1020px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    section
+    {
+        margin: 1rem;
+    }
+
+    /* Remaining changes to tags */
+    .dtb
+    {
+        display: block;
+    }
+
+    .imgsect
+    {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .imgsect img
+    {
+        margin: 0.5rem;
+    }
+    
+}   
+
+/* Made so the infoboxes don't look scuffed */
+
+@media only screen and (min-width: 801px) {
+    .infobox
+    {
+        flex-direction: row;
+    }
+}
+
+

@@ -1,0 +1,38 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+header {
+    height: 50px;
+    background-color: #666;
+}
+
+.columns, .content {
+    display: flex;
+    flex: auto;
+    flex-direction: row;
+}
+
+.sidebar-first {
+    order: 1;
+    background-color: #999;
+    width: 20vw;
+}
+
+article {
+    order: 2;
+    width: 100%;
+}
+
+.sidebar-second {
+    order: 3;
+    background-color: #999;
+    width: 20vw;
+}
+
+footer {
+    height: 50px;
+    background-color: #666;
+    order: 4;
+}

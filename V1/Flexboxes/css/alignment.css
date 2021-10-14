@@ -1,0 +1,126 @@
+.p {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #ccc;
+    display: flex;
+}
+
+.c {
+    width: 100px;
+    padding: 10px;
+    color: #fff;
+    box-sizing: border-box;
+    font-size: 42px;
+    text-align: center;
+}
+.c1 {
+    background-color: red;
+}
+
+.c2 {
+    background-color: green;
+}
+
+.c3 {
+    background-color: blue;
+}
+
+.c4 {
+    background-color: orange;
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+}
+
+h4 {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.p1 {
+    justify-content: flex-start;
+}
+
+.p2 {
+    justify-content: flex-end;
+}
+
+.p3 {
+    justify-content: center;
+}
+
+.p4 {
+    justify-content: space-between;
+}
+
+.p5 {
+    justify-content: space-around;
+}
+
+.p6 {
+    align-items: flex-start;
+    height: 100px;
+}
+
+.p8 {
+    align-items: center;
+    height: 100px;
+}
+
+.p9 {
+    flex-wrap: wrap;
+    height: 150px;
+}
+
+.p9>.c {
+    width: 200px;
+}
+
+.p10 {
+    align-self: flex-end;
+    height: 100px;
+}
+.p10>.c1 {
+    height: 68.8px;
+}
+
+.p10>.c2 {
+    height: 68.8px;
+}
+
+.p10>.c3 {
+    height: 68.8px;
+}
+
+.p10>.c4 {
+    align-self: flex-end;
+    height: 68.8px;
+}
+
+.order1 {
+    order: 1;
+}
+
+.order2 {
+    order: 2;
+}
+
+.order3 {
+    order: 3;
+}
+
+.order4 {
+    order: 4;
+}
+
+.p12 {
+    flex: auto;
+}
+
+.p12>.c1, .p12>.c4 {
+    width: 200px;
+}

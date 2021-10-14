@@ -1,0 +1,73 @@
+h1 {
+    text-align: center;
+}
+
+.container { 
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 570px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* PS står primary square, aka de grå kasser */
+.ps {
+    width: 180px;
+    height: 180px;
+    margin: 5px;
+    background-color: #999;
+    display: flex;
+}
+
+/* IS står for inner square, aka de orange kasser */
+.is {
+    width: 60px;
+    height: 60px;
+    background-color: orange;
+}
+
+/* classes'ne nedenfor bliver brugt i ps'erne til at definere positionerne af de orange kasser */
+.top-left {
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.top-center {
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.top-right {
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+.center-left {
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.center-center {
+    align-items: center;
+    justify-content: center;
+}
+
+.center-right {
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.bottom-left {
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+.bottom-center {
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.bottom-right {
+    align-items: flex-end;
+    justify-content: flex-end;
+}
